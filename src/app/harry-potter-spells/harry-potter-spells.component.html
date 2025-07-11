@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Spell</th>
+        <th>When to use?</th>
+    </tr>
+    @for(spell of spells(); track spell.index) {
+        <tr class="row">
+            <td>{{spell.spell}}</td>
+            <td>{{spell.use}}</td>
+        </tr>
+    }
+</table>

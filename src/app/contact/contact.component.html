@@ -1,0 +1,20 @@
+<form [formGroup]="contactUsForm" class="contact-form" (ngSubmit)="onSubmit()">
+    
+    <div class="field">
+        <label>Email:</label>
+        <input type="email" formControlName="email" name="email"/>
+        @if(contactUsForm.get('email')?.touched && (contactUsForm.get('email')?.errors?.['required'] || contactUsForm.get('email')?.errors?.['email'])) {
+            <span class="error">Enter a valid email</span>
+        }
+    </div>
+
+    <div class="field">
+        <label>Message:</label>
+        <textarea style="height: 200px;" type="message" formControlName="message" name="message"></textarea>
+        @if(contactUsForm.get('message')?.touched && contactUsForm.get('message')?.errors?.['required']) {
+            <span class="error">Enter a valid email</span>
+        }
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>

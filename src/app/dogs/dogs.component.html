@@ -1,0 +1,7 @@
+
+    <h1>Dogs</h1>
+    <button (click)="getRandomDog()">Get Dog</button>
+    @if((dog | async)?.message) {
+        <img [src]="(dog | async).message" alt="Dog Image">
+
+    }

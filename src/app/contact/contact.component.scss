@@ -1,0 +1,15 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+    .field {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error {
+        color: red;
+    }
+}

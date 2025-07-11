@@ -1,0 +1,11 @@
+nav {
+    background-color: greenyellow;
+    display: flex;
+    > li {
+        list-style-type: none;
+        padding: 20px;
+        >a {
+            text-decoration: none;
+        }
+    }
+}
